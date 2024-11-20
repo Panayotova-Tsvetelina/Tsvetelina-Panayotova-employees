@@ -1,0 +1,267 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa; /* Soft light background */
+    color: #333;
+}
+
+/* Ensure the card is always centered vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    min-height: 100vh; /* Make container take full height of the screen */
+    padding: 0 15px; /* Prevent overflow on smaller screens */
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Floating effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header Styling */
+.card-header {
+    background: linear-gradient(135deg, #cc9fc5, #c7b5c4); /* Gradient from dark blue to light blue */
+    border-radius: 20px 20px 0 0;
+    padding: 2rem;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-header p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+/* Card Body - Centering Elements */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 2rem;
+}
+
+/* Form Label */
+.form-label {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* File Input */
+input[type="file"] {
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #f0f0f0;
+    border-color: #cc9fc5;
+}
+
+input[type="file"]:focus {
+    background-color: #e8f0fe;
+    border-color: #cc9fc5;
+    outline: none;
+}
+
+/* Button Styling */
+button.btn-primary {
+    background-color: #cc9fc5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #b858a8;
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Hover Effect for Buttons */
+.btn-hover-effect:hover {
+    background-color: #b858a8;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa; /* Light background */
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full screen height */
+    padding: 0 15px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 700px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Floating effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header Styling */
+
+.card-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-header p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+/* Card Body - Centering Elements */
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+/* Alerts */
+.alert {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.alert-info {
+    background-color: #e7f3fe;
+    color: #31708f;
+}
+
+.alert-warning {
+    /*background-color: #050000;*/
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .card-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+}
+
+.card-header {
+    min-height: 150px; /* Adjust as needed */
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.alert ul li {
+    margin-left: 5px;
+}
+
+.alert ul li i {
+    color: #f44336;
+    margin-right: 5px;
+}
+
